@@ -123,7 +123,7 @@ export default function ContactNote({ noteRef }) {
               color: "#1a1208",
             }}
           >
-            aditi.borkar@example.com
+            aditi.borkar1507@gmail.com
           </span>
         </div>
 
