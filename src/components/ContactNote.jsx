@@ -23,7 +23,7 @@ export default function ContactNote({ noteRef }) {
       <div
         className="torn-top"
         style={{
-          width: 190,
+          width: 250, // Increased width from 190 to 250 for optimal spacing
           background: "#fef9e7",
           transform: "rotate(-1.5deg)",
           boxShadow: "3px 4px 12px rgba(0,0,0,0.5), 1px 1px 4px rgba(0,0,0,0.3)",
