@@ -11,6 +11,7 @@ import RedStrings from "./RedStrings";
 import ForensicProps from "./ForensicProps";
 import CognitivePillars from "./CognitivePillars";
 import { projects, FOLDER_POSITIONS } from "../data/projects";
+import BloodSplatter from "./BloodSplatter";
 
 // ── Layout constants ──────────────────────────────────────────────────────────
 // Folders are 215px wide. We use 265px column pitch (215 + 50px gap)
@@ -64,6 +65,9 @@ export default function CorkBoard() {
           position: "absolute", inset: 0, pointerEvents: "none", zIndex: 1,
           background: "radial-gradient(ellipse at 50% 45%, transparent 38%, rgba(0,0,0,0.5) 100%)",
         }} />
+
+        {/* Blood splatter layer — sits above cork, below all cards */}
+        <BloodSplatter boardHeight={boardH} />
 
         {/* Board header label */}
         <motion.div
