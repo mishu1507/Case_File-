@@ -8,6 +8,8 @@ const CONNECTIONS = [
   { from: "dossier-card", to: "flip-clock", label: "CASE ALIBI" },
   { from: "flip-clock", to: "folder-forensic-lens", label: "TIMELINE RECONSTRUCTION" },
   { from: "flip-clock", to: "skill-cybersecurity", label: "INCIDENT TIME" },
+  { from: "folder-quarantine", to: "skill-cybersecurity", label: "SANDBOX VERDICT" },
+  { from: "folder-authenti-hire", to: "skill-languages", label: "SCAM CLASSIFIER" },
   { from: "folder-mernverse-os", to: "skill-frameworks", label: "SIMULATION" },
   { from: "folder-prompt-shield", to: "skill-cybersecurity", label: "AI SHIELD" },
   { from: "folder-threat-scope", to: "skill-concepts", label: "ATTACK PATH" },

@@ -209,7 +209,7 @@ export default function CertificationsStack({ stackRef }) {
                   {grouped[issuer].map((cert, ci) => (
                     <motion.a
                       key={cert.id}
-                      href={cert.file || cert.credly}
+                      href={cert.file ? `${import.meta.env.BASE_URL}${cert.file.startsWith('/') ? cert.file.slice(1) : cert.file}` : cert.credly}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cert-card"

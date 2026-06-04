@@ -6,6 +6,46 @@ export const projects = [
   // ─── DEPLOYED / BUILT ──────────────────────────────────────────────────────
 
   {
+    id: "quarantine",
+    caseNo: "CASE-Q1",
+    name: "Quarantine",
+    status: "ACTIVE",
+    classification: "FLAGSHIP",
+    tech: ["Python", "Docker", "KVM", "YARA", "EMBER", "Flask", "SQLite"],
+    problem:
+      "Analyzing malicious Windows binaries safely requires complete environment isolation to prevent infection breakout, combined with multi-stage evaluation (static signature matching, dynamic behavior observation, and ML scoring) to ensure high detection accuracy.",
+    description:
+      "A malware analysis and detection platform featuring isolated analysis environments. Leverages KVM hypervisors and Docker containers to run files securely, performing static PE parsing, dynamic analysis, and ML-based detection to return a detailed classification verdict.",
+    architecture:
+      "Multi-tier security architecture. Utilizes Docker containers and KVM virtual machines for safe sandboxed execution of Windows executables. Integrates EMBER Random Forest classifiers for ML-based scoring, YARA for static signature scanning, and Flask for backend API routing and reporting.",
+    skills: ["Malware Analysis", "Sandbox Isolation", "Virtualization (KVM)", "Docker", "Machine Learning (EMBER)", "YARA Rules"],
+    github: "https://github.com/mishu1507/Quarantine",
+    live: null,
+    pinColor: "red",
+    rotation: -1.8,
+  },
+
+  {
+    id: "authenti-hire",
+    caseNo: "CASE-AH1",
+    name: "AuthentiHire",
+    status: "ACTIVE",
+    classification: "FLAGSHIP",
+    tech: ["Python", "Flask", "Vercel", "Tailwind CSS", "HTML", "JavaScript", "AI APIs"],
+    problem:
+      "Online recruitment is plagued by fake internships, phishing job offers, and fraudulent hiring postings that exploit job seekers. Spotting these scams requires real-time intelligence and automated analysis of job posting patterns.",
+    description:
+      "An AI-powered job and internship fraud detection platform. Analyzes job details, posting channels, and employer credentials using custom rules and AI models to assign a risk score and alert job seekers to potential employment scams.",
+    architecture:
+      "Full-stack web application with a Flask-based detection engine and a Vercel-deployed serverless frontend. Integrates custom text classifiers and AI APIs to analyze text structure, contact information, and domain authenticity.",
+    skills: ["Job Fraud Detection", "Natural Language Processing", "AI Integration", "Web Application Security", "Serverless Deployment"],
+    github: "https://github.com/mishu1507/AuthentiHire",
+    live: "https://authenti-hire.vercel.app/",
+    pinColor: "yellow",
+    rotation: 1.4,
+  },
+
+  {
     id: "forensic-lens",
     caseNo: "CASE-FL2",
     name: "ForensicLens V2",
@@ -232,15 +272,17 @@ export const projects = [
 // 4-column layout: 265px column pitch, 300px row pitch
 // Left margin 60px, first row starts at 360px from top
 export const FOLDER_POSITIONS = [
-  { top: 660, left:  60 },   // 0 ForensicLens
-  { top: 660, left: 325 },   // 1 MERNVerseOS
-  { top: 660, left: 590 },   // 2 BrainSparkz
-  { top: 960, left:  60 },   // 3 Screenshot_Action_AI
-  { top: 960, left: 325 },   // 4 HelpYouStudy
-  { top: 960, left: 590 },   // 5 Zip_Unzip
-  { top: 1260, left:  60 },  // 6 ThreatScope
-  { top: 1260, left: 325 },  // 7 PromptShield
-  { top: 1260, left: 590 },  // 8 SystemMapper
-  { top: 1560, left:  60 },  // 9 AutoSOC Lite
-  { top: 1560, left: 325 },  // 10 LogMind
+  { top: 660, left:  60 },   // 0 Quarantine
+  { top: 660, left: 325 },   // 1 AuthentiHire
+  { top: 660, left: 590 },   // 2 ForensicLens V2
+  { top: 960, left:  60 },   // 3 MERNVerseOS
+  { top: 960, left: 325 },   // 4 BrainSparkz
+  { top: 960, left: 590 },   // 5 Screenshot_Action_AI
+  { top: 1260, left:  60 },  // 6 HelpYouStudy
+  { top: 1260, left: 325 },  // 7 Zip_Unzip
+  { top: 1260, left: 590 },  // 8 ThreatScope
+  { top: 1560, left:  60 },  // 9 PromptShield
+  { top: 1560, left: 325 },  // 10 SystemMapper
+  { top: 1560, left: 590 },  // 11 AutoSOC Lite
+  { top: 1860, left:  60 },  // 12 LogMind
 ];
